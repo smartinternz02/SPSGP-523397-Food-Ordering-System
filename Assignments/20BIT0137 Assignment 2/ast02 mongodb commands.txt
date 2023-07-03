@@ -1,0 +1,17 @@
+use mydb;
+
+db.createCollection("Employee");
+
+db.Employee.insertOne({"EmployeeID":"E1","EmployeeName":"Sanjana"});
+
+db.Employee.insertOne({"EmployeeID":"E2","EmployeeName":"Gaurav"});
+
+db.Employee.updateOne({"EmployeeID":"E1"},{$set:{"Address":"Bangalore"}});
+
+db.Employee.updateOne({"EmployeeID":"E2"},{$set:{"Address":"Coimbatore"}});
+
+db.Employee.countDocuments();
+
+db.Employee.deleteOne({"EmployeeID":"E2"});
+
+db.Employee.countDocuments();

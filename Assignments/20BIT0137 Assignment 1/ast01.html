@@ -1,0 +1,152 @@
+<!--create one form with input and apply css for that-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<meta name="swarnameena" content="registration"/>
+<style type="text/css">
+body {
+background-color: #b8f2eb;
+}
+table {
+margin-left: 20px;
+font-size: 18px;
+}
+</style>
+</head>
+<body>
+<form action="thankyoupage.html" method="post">
+<center><h1 style="color:purple">Industrial Internship Course Selection</h1></center><br>
+<table>
+<tr>
+<td>
+<label for="name">Name: </label>
+</td>
+<td>
+<input id="name" type="text" name="name" placeholder="Enter Name" required/>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="regno">Registration number: </label>
+</td>
+<td>
+<input id="regno" type="text" name="regno" placeholder="Enter Registration No." required/>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="email">Email: </label>
+</td>
+<td>
+<input id="email" type="email" name="email" placeholder="Enter Email" required/>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="phone">Phone number: </label>
+</td>
+<td>
+<input id="phone" type="phone" name="phone" placeholder="Enter Phone number" required/>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="address">Address: </label>
+</td>
+<td>
+<textarea id="address" name="address" rows="4" cols="50" placeholder="Enter Address"></textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="gender">Gender: </label>
+</td>
+<td>
+<input type="radio" id="gender" name="gender" value="male">Male</input>
+<input type="radio" id="gender" name="gender" value="female">Female</input>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="programming">Languages known: </label>
+</td>
+<td>
+<input type="checkbox" id="Java" name="Java" value="Java" checked=?yes?/>
+<label>Java</label><br>
+<input type="checkbox" id="Python" name="Python" value="Python"/>
+<label>Python</label><br>
+<input type="checkbox" id="C" name="C" value="C"/>
+<label>C</label><br>
+<input type="checkbox" id="C++" name="C++" value="C++"/>
+<label>C++</label>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="course">Choose Internship course: </label>
+</td>
+<td>
+<select name="course" id="course">
+<option value="projectdevelopment">Project development with competitive coding</option>
+<option value="ai">Smart Bridge Externship program in Artificial Intelligence</option>
+<option value="datascience">Smart Bridge Externship program in Applied Data Science</option>
+<option value="dataanalytics">Smart Bridge Externship program in Data Analytics</option>
+<option value="iot">Smart Bridge Externship program in Internet of Things (IoT)</option>
+<option value="ethicalhacking">Smart Bridge Externship program in Cyber Security & Ethical Hacking</option>
+<option value="salesforceadmin">Smart Bridge Externship program in Salesforce Administrator/Associate</option>
+<option value="salesforcedeveloper">Smart Bridge Externship program in Salesforce Developer</option>
+<option value="springboot">Smart Bridge Externship program in Modern Application Development (Java Spring Boot)</option>
+<option value="kotlin">Smart Bridge Externship program in Android Application Development with Kotlin</option>
+<option value="siem">Smart Bridge Externship program in Cyber Threat Intelligence & Hunting (SIEM Analyst with IBM Qradar)</option>
+<option value="maven">Maven Silicon VLSI Design Internship (Hands-on)</option>
+<option value="electricaldesign">L&T Certificate in Electrical Design for Modern Building Infrastructure</option>
+<option value="digitalization">L&T Certificate in Heavy Manufacturing and Elements of Digitalization</option>
+<option value="mechanicalservices">L&T Certificate in Mechanical Services Engineering</option>
+<option value="transportationinfrastructure">L&T Transportation Infrastructure Engineering</option>
+<option value="mechanizedconstruction">L&T Mechanized Construction Techniques</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="certificates">Choose Certificate: </label>
+</td>
+<td>
+<select name="certificate" id="certificate">
+<option value="aws">AWS Certified Cloud Practitioner</option>
+<option value="googlecloud">Google Cloud Computing Foundation</option>
+<option value="java">Java SE11 Developer Certified Professional</option>
+<option value="azureai">Microsoft Azure AI Fundamentals</option>
+<option value="microsoft365">Microsoft 365 Certified Fundamentals</option>
+<option value="microsoftpower">Microsoft Power Platform Fundamentals</option>
+<option value="digitalmarketing">Fundamentals of Digital Marketing using Social Media platforms</option>
+<option value="cybersecurity">Pragmatic Approach to Cyber Security</option>
+<option value="rpa">Robotic Process Automation (RPA) certification</option>
+<option value="selenium">Selenium Test Engineer</option>
+<option value="acu">Autodesk Certified User (ACU)</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="submit">Submit: </label>
+</td>
+<td>
+<input type="submit" name="submit" value="Submit Form"/>
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
